@@ -1,11 +1,10 @@
 import './util/module-alias';
 import { Server } from '@overnightjs/core';
-import { Application, } from 'express';
+import { Application } from 'express';
 import bodyParser from 'body-parser';
 import { ForecastController } from './controllers/forecast';
 import * as express from 'express';
 export class SetupServer extends Server {
-
   /*
    * same as this.port = port, declaring as private here will
    * add the port variable to the SetupServer instance
